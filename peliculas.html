@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HARRY POTTER </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Resources/css/styles.css">
+    <link rel="icon" href="iconos/icono.2.ico">
+    <link rel="stylesheet" href="https://font.googleapis.com/css?family=Sofia">
+</head>
+
+<header>
+
+    <div class="division">
+        <!--bootstrap clase display-->
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <h1 class="display-3">Universo Harry Potter</h1>
+            <div class="container-fluid">
+                <img class="hp" src="Resources/favicon.ico/harry-potter-logo-sticker-india-700x700.ico" alt="logo"
+                    width="200" height="200">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-secondary"><a class="nav-link"
+                                    href="index.html">Inicio</a></button>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-secondary"><a class="nav-link"
+                                    href="peliculas.html">Peliculas</a></button>
+                        </li>
+
+
+                </div>
+            </div>
+        </nav>
+</header>
+
+<body>
+
+
+
+
+
+
+    <div class="jumbotron text-center">
+        <h1>La piedra filosofal</h1>
+    </div>
+
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-sm-6">
+                <p>El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha
+                    heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una
+                    amistad con dos jóvenes que se convertirán en sus compañeros de aventura. 
+                </p>
+            </div>
+
+            <div class="col-sm-6">
+               <p>
+                Durante su primer año en
+                    Hogwarts, descubre que un malévolo y poderoso mago llamado Voldemort está en busca de una piedra
+                    filosofal que alarga la vida de quien la posee.
+               </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="Resources/imagenes/hp1/5326c4c4-ec90-438e-986e-89ab4707ed03_16-9-discover-aspect-ratio_default_0.jpg"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="Resources/imagenes/hp1/descarga.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="Resources/imagenes/hp1/full-harry-potter-and-the-philosopher-stone-screenshot-and-the-philosopher-stone-8c334c98cf558bc4af86b1da6da63fb3-large-1260039-768x432.jpg"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="Resources/imagenes/hp1/harry-potter-piedra-filosofal-2921292.webp" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    
+
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fader">
+        <div class="numbertext">1 / 4</div>
+        <img src="Resources/imagenes/hp1/5326c4c4-ec90-438e-986e-89ab4707ed03_16-9-discover-aspect-ratio_default_0.jpg"
+            style="width:100%">
+    </div>
+
+    <div class="mySlides fader">
+        <div class="numbertext">2 / 4</div>
+        <img src="Resources/imagenes/hp2/critica-harry-potter-y-la-camara-secreta-cine.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fader">
+        <div class="numbertext">3 / 4</div>
+        <img src="Resources/imagenes/hp2/hp2_3415x1920_300dpi_kitphoto_03_63c7c52b.jpeg"
+            style="width:100%">
+    </div>
+
+    <div class="mySlides fader">
+        <div class="numbertext">4 / 4</div>
+        <img src="Resources/imagenes/hp2/Tom_Riddle_Chamber_of_Secrets.webp" style="width:100%">
+    </div>
+
+   
+</div>
+<br>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+
+<iframe width="789" height="444" src="https://www.youtube.com/embed/ZgrCZVjPg9g" title="Harry Potter y la piedra filosofal | Trailer | HBO Max" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+
+    </head>
+
+    <body>
+
+
+
+
+
+
+                
+    <footer>
+
+        <ul class="icono">
+            <li> <a href="https://twitter.com/" target="_blank">
+                    <img src="Resources/iconos/twitter-logo.2.ico" width="30px" align="middle">Contactanos por twitter
+                </a></li>
+            <li> <a href="https://www.facebook.com/" target="_blank">
+                    <img src="Resources/iconos/facebook.ico" width="30px" align="middle">Contactanos por facebook
+                </a></li>
+            <li> <a href="https://www.instagram.com/" target="_blank">
+                    <img src="Resources/iconos/instagram.ico" width="30px" align="middle">Contactanos por instragram
+                </a></li>
+        </ul>
+    </footer>
+
+
+    <div>
+        <p class="slideup" style="animation-delay: 4s;">Gracias por llegar hasta aqui</p>
+        <a class="slideup" style="animation-delay:5s;" href="#"><label style="background: 
+    black; border-color:black; 
+    height: 44px; color: white;
+     min-width: 152px; 
+     text-align:center; 
+     border-radius:3px; 
+     font-size: 16px; 
+     padding: 10px; 
+     font-weight: 700;">Inicio</label></a>
+    </div>
